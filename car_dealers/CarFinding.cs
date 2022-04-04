@@ -16,27 +16,34 @@ namespace car_dealers
         public CarFinding(Form1 form1)
         {
             InitializeComponent();
-            //InitComboboxes();
             this.form1 = form1;
+            InitCombobox1();
         }
 
-        //private void InitComboboxes()
-        //{
-        //    List<string> brandList = new List<string>();
-        //    brandList = form1.BrandList;
-        //    if (brandList != null)
-        //    {
-        //        label5.Text = brandList.Count.ToString();
-        //        foreach (string brand in brandList)
-        //        {
-        //            comboBox1.Items.Add(brand);
-        //        }
-        //    }
-        //    else label5.Text = "cipa";
-        //}
+        private void InitCombobox1()
+        {
+            if (form1.Cars != null)
+            {
+                foreach (Car c in form1.Cars)
+                {
+                    if (!comboBox1.Items.Contains(c.Model))
+                    {
+                        comboBox1.Items.Add(c.Model);
+                    }
+                }
+            }
+        }
         private void button_showCar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //foreach(Car c in Form1.cars)
+           {
+
+           }
         }
     }
 }

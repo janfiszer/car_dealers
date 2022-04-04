@@ -35,5 +35,25 @@ namespace car_dealers
         {
             return brand + ";" + model + ";" + engine.ToString() + ";" + color.ToString() + ";" + imagePath + "\n";
         }
+        public string Brand
+        {
+            get { return brand; }
+        }
+        public string Model
+        {
+            get { return model; }
+        }
+        public Engine Engine
+        {
+            get { return engine; }
+        }
+        public string Color
+        {
+            get { return color; }
+        }
+        public string ImagePath
+        {
+            get { return imagePath; }
+        }
     }
 }

@@ -14,20 +14,14 @@ namespace car_dealers
     public partial class Form1 : Form
     {
         private List<Car> cars = new List<Car>();
-        private List<string> brandList = new List<string>();
-        private List<string> models = new List<string>();
 
-
-        public List<string> BrandList
-        {
-            get { return brandList; }
-        }
+        public List<Car> Cars
+            { get { return cars; } }
         public Form1()
         {
             InitializeComponent();
             getCarsFromFile();
             label2.Text = cars.Count.ToString();
-            label3.Text = brandList.Count.ToString();
         }
 
         // BUTTONS
@@ -59,18 +53,8 @@ namespace car_dealers
                 // WARNING: not sure if the third input is rigth
 
                 Car carToAdd = new Car(split[0], split[1], (Engine)Enum.Parse(typeof(Engine), split[2]), split[3], split[4]);
-                addToBrandList(split[0]);
                 cars.Add(carToAdd);
             }
-        }
-        private bool addToBrandList(string brand)
-        {
-            if (brand != null && !brandList.Contains(brand))
-            {
-                brandList.Add(brand);
-                return true;
-            }
-            return false;
         }
 
         public void carListToFile(string fileName)
