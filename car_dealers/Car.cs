@@ -16,10 +16,24 @@ namespace car_dealers
     }
     public class Car
     {
-        private int id;
         private string brand;
         private string model;
         private Engine engine;
-        private Color color;
+        private string color;
+        private string imagePath;
+
+        public Car(string brand, string model, Engine engine, string color, string imagePath)
+        {
+            this.brand = brand;
+            this.model = model;
+            this.engine = engine;
+            this.color = color;
+            this.imagePath = imagePath;
+        }
+
+        public override string ToString()
+        {
+            return brand + ";" + model + ";" + engine.ToString() + ";" + color.ToString() + ";" + imagePath + "\n";
+        }
     }
 }

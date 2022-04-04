@@ -31,11 +31,13 @@
             this.button_addCar = new System.Windows.Forms.Button();
             this.button_findCar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_addCar
             // 
-            this.button_addCar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_addCar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_addCar.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_addCar.Location = new System.Drawing.Point(265, 108);
             this.button_addCar.Name = "button_addCar";
@@ -47,7 +49,7 @@
             // 
             // button_findCar
             // 
-            this.button_findCar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_findCar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_findCar.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_findCar.Location = new System.Drawing.Point(265, 182);
             this.button_findCar.Name = "button_findCar";
@@ -59,7 +61,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(282, 56);
@@ -68,11 +70,31 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "MENU";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(265, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(265, 294);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "label3";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_findCar);
             this.Controls.Add(this.button_addCar);
@@ -88,6 +110,8 @@
         private System.Windows.Forms.Button button_addCar;
         private System.Windows.Forms.Button button_findCar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

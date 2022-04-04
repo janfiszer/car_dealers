@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,50 +13,28 @@ namespace car_dealers
 {
     public partial class Form1 : Form
     {
-        private int oldHeight = 700;
-        private int oldWidth = 500;
+        private List<Car> cars = new List<Car>();
+        private List<string> brandList = new List<string>();
+        private List<string> models = new List<string>();
+
+
+        public List<string> BrandList
+        {
+            get { return brandList; }
+        }
         public Form1()
         {
             InitializeComponent();
-            //InitBotton();
-        }
-        private void InitBotton()
-        {
-            Button button = new Button();
-
-            button.Size = new Size(100, 50);
-            button.Location = new Point((this.Width)/2 - button.Width, (this.Height)/2 - button.Height);
-            button.Name = "add_car_button";
-            button.Text = "ADD A CAR";
-            Controls.Add(button);
+            getCarsFromFile();
+            label2.Text = cars.Count.ToString();
+            label3.Text = brandList.Count.ToString();
         }
 
-        private void Form1_ResizeEnd(object sender, EventArgs e)
-        {
-            foreach(Control control in Controls)
-            {
-                // counting in which proportion od the window is the control
-                double apparent_x = (double)control.Location.X/(double)oldWidth;
-                double apparent_y = (double)control.Location.Y/(double)oldHeight;
-
-                // new location
-                // the location is described by top left corner point, thats why the -control.Width
-                double final_x = apparent_x * (double)this.Size.Width;
-                double final_y = apparent_y * (double)this.Size.Height;
-                //MessageBox.Show(apparent_x.ToString() + " " + apparent_y.ToString() + "\n" + final_x.ToString() + "\n" + final_y.ToString() + "\n" + this.Width + " " + this.Height);
-                control.Location = new Point((int)final_x, (int)final_y);
-            }
-        }
-
-        private void Form1_ResizeBegin(object sender, EventArgs e)
-        {
-            oldHeight = this.Height;
-            oldWidth = this.Width;
-        }
-
+        // BUTTONS
         private void button_findCar_Click(object sender, EventArgs e)
         {
-
+            CarFinding carFinding = new CarFinding(this);
+            carFinding.Show();
         }
 
         private void button_addCar_Click(object sender, EventArgs e)
@@ -63,5 +42,54 @@ namespace car_dealers
             CarAdding caradding = new CarAdding(this);
             caradding.Show();
         }
+
+        // CARS LIST
+        public void addToCarList(Car car)
+        {
+            if (car != null)
+            {
+                cars.Add(car);
+            }    
+        }
+        private void getCarsFromFile()
+        {
+            foreach (string line in System.IO.File.ReadLines("all-cars.csv"))
+            {
+                string [] split = line.Split(';');
+                // WARNING: not sure if the third input is rigth
+
+                Car carToAdd = new Car(split[0], split[1], (Engine)Enum.Parse(typeof(Engine), split[2]), split[3], split[4]);
+                addToBrandList(split[0]);
+                cars.Add(carToAdd);
+            }
+        }
+        private bool addToBrandList(string brand)
+        {
+            if (brand != null && !brandList.Contains(brand))
+            {
+                brandList.Add(brand);
+                return true;
+            }
+            return false;
+        }
+
+        public void carListToFile(string fileName)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (Car car in cars)
+            {
+                sb.Append(car.ToString());
+            }
+            File.WriteAllText(fileName, sb.ToString());
+        }
+
+        //public List<string> getBrands()
+        //{
+        //    List<string> list = new List<string>();
+        //    foreach(Car car in cars)
+        //    {
+       
+        //    }
+        //}
     }
 }

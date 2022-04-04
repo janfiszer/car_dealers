@@ -27,19 +27,20 @@ namespace car_dealers
                 comboBox2.Items.Add(e);
             }
         }
+
+        // BUTTONS
         private void button1_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label6.Text = openFileDialog1.FileName;
         }
 
         private void button_addCar_Click(object sender, EventArgs e)
@@ -48,17 +49,31 @@ namespace car_dealers
             string model = textBox2.Text;
             Engine engine = new Engine();
             Color color = colorDialog1.Color;
-            pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+            string imagePath = openFileDialog1.FileName;
 
-            string all = brand + " " + model + " " + " " + engine.ToString() + " "  + color;
+            pictureBox1.Image = Image.FromFile(imagePath);
+            string all = brand + ";" + model + ";" + engine.ToString() + ";"  + color.Name + ";" + imagePath + "\n";
+
             MessageBox.Show(all);
-            Car car = new Car();
-        }
 
-        private void button3_Click(object sender, EventArgs e)
+            Car car = new Car(brand, model, engine, color.Name, imagePath);
+            form1.addToCarList(car);
+            // TODO: adding to brandList
+            // TODO: don't do that every time after adding a car
+            form1.carListToFile("all-cars.csv");
+        }
+        private void button5_Click(object sender, EventArgs e)
         {
-            label6.Text = openFileDialog1.FileName;
-
+            textBox1.Clear();
+            textBox2.Clear();
+            
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }
