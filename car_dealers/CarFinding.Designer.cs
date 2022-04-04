@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox_engine = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox_brand = new System.Windows.Forms.ComboBox();
+            this.comboBox_model = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.button_showCar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // comboBox_engine
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(292, 142);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 18;
+            this.comboBox_engine.FormattingEnabled = true;
+            this.comboBox_engine.Location = new System.Drawing.Point(292, 142);
+            this.comboBox_engine.Name = "comboBox_engine";
+            this.comboBox_engine.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_engine.TabIndex = 18;
             // 
             // label2
             // 
@@ -88,22 +88,23 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Brand:";
             // 
-            // comboBox1
+            // comboBox_brand
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(292, 88);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
+            this.comboBox_brand.FormattingEnabled = true;
+            this.comboBox_brand.Location = new System.Drawing.Point(292, 88);
+            this.comboBox_brand.Name = "comboBox_brand";
+            this.comboBox_brand.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_brand.TabIndex = 19;
+            this.comboBox_brand.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox3
+            // comboBox_model
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(292, 115);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 20;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.comboBox_model.FormattingEnabled = true;
+            this.comboBox_model.Location = new System.Drawing.Point(292, 115);
+            this.comboBox_model.Name = "comboBox_model";
+            this.comboBox_model.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_model.TabIndex = 20;
+            this.comboBox_model.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
@@ -141,9 +142,9 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button_showCar);
             this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox_model);
+            this.Controls.Add(this.comboBox_brand);
+            this.Controls.Add(this.comboBox_engine);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -157,13 +158,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox_engine;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox_brand;
+        private System.Windows.Forms.ComboBox comboBox_model;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Button button_showCar;
         private System.Windows.Forms.Label label5;

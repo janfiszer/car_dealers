@@ -26,9 +26,9 @@ namespace car_dealers
             {
                 foreach (Car c in form1.Cars)
                 {
-                    if (!comboBox1.Items.Contains(c.Model))
+                    if (!comboBox_brand.Items.Contains(c.Brand))
                     {
-                        comboBox1.Items.Add(c.Model);
+                        comboBox_brand.Items.Add(c.Brand);
                     }
                 }
             }
@@ -40,10 +40,19 @@ namespace car_dealers
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //foreach(Car c in Form1.cars)
-           {
 
-           }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (Car c in form1.Cars)
+            {
+                if (c.Brand.Equals(comboBox_brand.SelectedItem))
+                {
+                    comboBox_model.Items.Add(c.Model);
+                    MessageBox.Show(c.Model);
+                }
+            }
         }
     }
 }
