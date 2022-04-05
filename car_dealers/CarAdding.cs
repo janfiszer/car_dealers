@@ -15,8 +15,11 @@ namespace car_dealers
         Form1 form1;
         public CarAdding(Form1 form1)
         {
-            InitializeComponent();
             this.form1 = form1;
+            this.Location = form1.Location;
+            this.Size = form1.Size;
+
+            InitializeComponent();
             enginesToComboBox();
             button_addCar.Enabled = false;
         }

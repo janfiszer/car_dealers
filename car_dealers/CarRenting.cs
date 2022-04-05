@@ -20,9 +20,12 @@ namespace car_dealers
 
         public CarRenting(CarFinding cf, string ImagePath)
         {
+            this.Location = cf.Location;
+            this.Size = cf.Size;
+            this.carFinding = cf;
+
             InitializeComponent();
             loadBookedListFromFile("booked-testing-rides.txt");
-            this.carFinding = cf;
             InitCombobox();
             pictureBox1.Image = Image.FromFile(ImagePath);
         }

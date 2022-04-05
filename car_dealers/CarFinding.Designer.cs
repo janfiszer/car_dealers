@@ -40,13 +40,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button_rentIt = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_engine
             // 
             this.comboBox_engine.FormattingEnabled = true;
-            this.comboBox_engine.Location = new System.Drawing.Point(97, 133);
+            this.comboBox_engine.Location = new System.Drawing.Point(97, 100);
             this.comboBox_engine.Name = "comboBox_engine";
             this.comboBox_engine.Size = new System.Drawing.Size(121, 21);
             this.comboBox_engine.TabIndex = 18;
@@ -56,7 +57,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(28, 79);
+            this.label2.Location = new System.Drawing.Point(28, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 15;
@@ -66,7 +67,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(28, 107);
+            this.label3.Location = new System.Drawing.Point(28, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 16;
@@ -76,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(28, 134);
+            this.label4.Location = new System.Drawing.Point(28, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 17;
@@ -86,7 +87,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(28, 52);
+            this.label1.Location = new System.Drawing.Point(28, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 16);
             this.label1.TabIndex = 14;
@@ -95,7 +96,7 @@
             // comboBox_brand
             // 
             this.comboBox_brand.FormattingEnabled = true;
-            this.comboBox_brand.Location = new System.Drawing.Point(97, 52);
+            this.comboBox_brand.Location = new System.Drawing.Point(97, 19);
             this.comboBox_brand.Name = "comboBox_brand";
             this.comboBox_brand.Size = new System.Drawing.Size(121, 21);
             this.comboBox_brand.TabIndex = 19;
@@ -104,7 +105,7 @@
             // comboBox_model
             // 
             this.comboBox_model.FormattingEnabled = true;
-            this.comboBox_model.Location = new System.Drawing.Point(97, 79);
+            this.comboBox_model.Location = new System.Drawing.Point(97, 46);
             this.comboBox_model.Name = "comboBox_model";
             this.comboBox_model.Size = new System.Drawing.Size(121, 21);
             this.comboBox_model.TabIndex = 20;
@@ -113,7 +114,7 @@
             // comboBox_color
             // 
             this.comboBox_color.FormattingEnabled = true;
-            this.comboBox_color.Location = new System.Drawing.Point(97, 106);
+            this.comboBox_color.Location = new System.Drawing.Point(97, 73);
             this.comboBox_color.Name = "comboBox_color";
             this.comboBox_color.Size = new System.Drawing.Size(121, 21);
             this.comboBox_color.TabIndex = 21;
@@ -122,7 +123,7 @@
             // button_showCar
             // 
             this.button_showCar.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_showCar.Location = new System.Drawing.Point(31, 160);
+            this.button_showCar.Location = new System.Drawing.Point(31, 127);
             this.button_showCar.Name = "button_showCar";
             this.button_showCar.Size = new System.Drawing.Size(185, 68);
             this.button_showCar.TabIndex = 22;
@@ -132,7 +133,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(281, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(282, 38);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 176);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +145,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(337, 18);
+            this.label5.Location = new System.Drawing.Point(323, 14);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 21);
             this.label5.TabIndex = 24;
@@ -153,7 +154,7 @@
             // button_rentIt
             // 
             this.button_rentIt.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_rentIt.Location = new System.Drawing.Point(581, 160);
+            this.button_rentIt.Location = new System.Drawing.Point(581, 146);
             this.button_rentIt.Name = "button_rentIt";
             this.button_rentIt.Size = new System.Drawing.Size(91, 68);
             this.button_rentIt.TabIndex = 25;
@@ -161,11 +162,22 @@
             this.button_rentIt.UseVisualStyleBackColor = true;
             this.button_rentIt.Click += new System.EventHandler(this.button_rentIt_Click);
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(33, 201);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(185, 68);
+            this.button4.TabIndex = 26;
+            this.button4.Text = "MENU";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // CarFinding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button_rentIt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
@@ -179,6 +191,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CarFinding";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CarFinding";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -200,5 +213,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_rentIt;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -20,8 +20,12 @@ namespace car_dealers
         }
         public CarFinding(Form1 form1)
         {
-            InitializeComponent();
+            this.Location = form1.Location;
+            this.Size = form1.Size;
             this.form1 = form1;
+
+            InitializeComponent();
+
             InitCombobox_brand();
             button_rentIt.Visible = false;
             label5.Visible = false;
@@ -47,10 +51,10 @@ namespace car_dealers
         }
 
 
-
         // COMBOBOXES brand -> model -> color -> engine
         private void comboBox_brand_SelectedIndexChanged(object sender, EventArgs e)
         {
+            comboBox_model.Items.Clear();
             foreach (Car c in form1.Cars)
             {
                 // if a model suit brand and haven't been added before
@@ -64,6 +68,7 @@ namespace car_dealers
         }
         private void comboBox_model_IndexChanged(object sender, EventArgs e)
         {
+            comboBox_color.Items.Clear();
             foreach (Car c in form1.Cars)
             {
                 if (c.Model.Equals(comboBox_model.SelectedItem) && !comboBox_color.Items.Contains(c.Color))
@@ -75,9 +80,11 @@ namespace car_dealers
         }
         private void comboBox_color_SelectedIndexChanged(object sender, EventArgs e)
         {
+            comboBox_engine.Items.Clear();
             foreach(Car c in form1.Cars)
             {
-                if (c.Color.Equals(comboBox_color.SelectedItem) && !comboBox_engine.Items.Contains(c.Engine))
+                // TODO: FIX COMBOBOXES if white two white cars comboBox_enginge doesn't work well
+                if (c.Model.Equals(comboBox_model.SelectedItem) && c.Color.Equals(comboBox_color.SelectedItem) && !comboBox_engine.Items.Contains(c.Engine))
                 {
                     comboBox_engine.Items.Add(c.Engine);
                     comboBox_engine.Enabled = true;

@@ -233,6 +233,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "CarAdding";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CarAdding";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

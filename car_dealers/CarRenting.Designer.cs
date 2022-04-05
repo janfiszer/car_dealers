@@ -95,6 +95,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox1);
             this.Name = "CarRenting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "CarRenting";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
