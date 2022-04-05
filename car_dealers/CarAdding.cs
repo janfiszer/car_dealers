@@ -18,6 +18,7 @@ namespace car_dealers
             InitializeComponent();
             this.form1 = form1;
             enginesToComboBox();
+            button_addCar.Enabled = false;
         }
 
         private void enginesToComboBox()
@@ -48,6 +49,7 @@ namespace car_dealers
             string brand = textBox1.Text;
             string model = textBox2.Text;
             Engine engine = new Engine();
+            engine = (Engine)Enum.Parse(typeof(Engine), comboBox2.SelectedItem.ToString(), true);
             Color color = colorDialog1.Color;
             string imagePath = openFileDialog1.FileName;
 
@@ -66,7 +68,6 @@ namespace car_dealers
         {
             textBox1.Clear();
             textBox2.Clear();
-            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -74,6 +75,9 @@ namespace car_dealers
             this.Close();
         }
 
-
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button_addCar.Enabled = true;
+        }
     }
 }

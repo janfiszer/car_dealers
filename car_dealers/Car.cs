@@ -35,6 +35,10 @@ namespace car_dealers
         {
             return brand + ";" + model + ";" + engine.ToString() + ";" + color.ToString() + ";" + imagePath + "\n";
         }
+        public bool Equals(Car other)
+        {
+            return (brand.Equals(other.Brand) && model.Equals(other.Model) && engine.Equals(other.engine) && color.Equals(other.Color));
+        }
         public string Brand
         {
             get { return brand; }

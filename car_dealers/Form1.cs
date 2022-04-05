@@ -47,13 +47,20 @@ namespace car_dealers
         }
         private void getCarsFromFile()
         {
-            foreach (string line in System.IO.File.ReadLines("all-cars.csv"))
+            try
             {
-                string [] split = line.Split(';');
-                // WARNING: not sure if the third input is rigth
+                foreach (string line in System.IO.File.ReadLines("all-cars.csv"))
+                {
+                    string[] split = line.Split(';');
+                    // WARNING: not sure if the third input is rigth
 
-                Car carToAdd = new Car(split[0], split[1], (Engine)Enum.Parse(typeof(Engine), split[2]), split[3], split[4]);
-                cars.Add(carToAdd);
+                    Car carToAdd = new Car(split[0], split[1], (Engine)Enum.Parse(typeof(Engine), split[2]), split[3], split[4]);
+                    cars.Add(carToAdd);
+                }
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                MessageBox.Show("haven't loaded all cars succesfully" + e);
             }
         }
 

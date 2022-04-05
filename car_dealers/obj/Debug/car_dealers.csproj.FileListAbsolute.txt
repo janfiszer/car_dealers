@@ -11,3 +11,4 @@ C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.exe
 C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.pdb
 C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarAdding.resources
 C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarFinding.resources
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarRenting.resources

@@ -1,0 +1,3 @@
+05.04.2022;Audi;Rs7;HYBRID;Gray;C:\Users\JF\repos\car_dealers\car_images\audi-rs7-elektryczny-szary.jpg
+15.04.2022;Audi;Rs7;HYBRID;Gray;C:\Users\JF\repos\car_dealers\car_images\audi-rs7-elektryczny-szary.jpg
+27.04.2022;Audi;Rs7;HYBRID;Gray;C:\Users\JF\repos\car_dealers\car_images\audi-rs7-elektryczny-szary.jpg
