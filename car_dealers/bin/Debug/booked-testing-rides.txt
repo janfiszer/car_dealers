@@ -3,3 +3,6 @@
 27.04.2022;Audi;Rs7;HYBRID;Gray;C:\Users\JF\repos\car_dealers\car_images\audi-rs7-elektryczny-szary.jpg
 05.04.2022;Fiat;Panda;HYBRID;Red;C:\Users\JF\repos\car_dealers\car_images\fiat-panda-czerwnony.jpg
 06.04.2022;Toyota;Yaris;PETROL;White;C:\Users\JF\repos\car_dealers\car_images\toyota-yaris-benzyna-biala.jpg
+15.04.2022;Fiat;500;HYBRID;White;C:\Users\JF\repos\car_dealers\car_images\fiat-500-bialy.jpg
+29.04.2022;Fiat;500;HYBRID;White;C:\Users\JF\repos\car_dealers\car_images\fiat-500-bialy.jpg
+18.04.2022;Fiat;Tipo;HYBRID;Gray;C:\Users\JF\repos\car_dealers\car_images\fiat-tipo-szary.jpg

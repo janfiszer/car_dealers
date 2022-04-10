@@ -65,7 +65,6 @@ namespace car_dealers
                 if (rent.Item1.Equals(c))
                 {
                     comboBox1.Items.Remove(rent.Item2);
-                    label1.Text = rent.Item2;
                 }
             }
         }
@@ -85,6 +84,11 @@ namespace car_dealers
                 sb.Append(rent.Item2 + ";" + rent.Item1.ToString());
             }
             File.WriteAllText(fileName, sb.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

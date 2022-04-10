@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_rentIt = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button_goback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
@@ -75,21 +75,23 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "It is possible to rent a car 40 days in advance";
             // 
-            // label1
+            // button_goback
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(403, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "label1";
+            this.button_goback.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_goback.Location = new System.Drawing.Point(375, 127);
+            this.button_goback.Name = "button_goback";
+            this.button_goback.Size = new System.Drawing.Size(209, 46);
+            this.button_goback.TabIndex = 29;
+            this.button_goback.Text = "Go back";
+            this.button_goback.UseVisualStyleBackColor = true;
+            this.button_goback.Click += new System.EventHandler(this.button1_Click);
             // 
             // CarRenting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button_goback);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button_rentIt);
             this.Controls.Add(this.pictureBox1);
@@ -109,6 +111,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_rentIt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_goback;
     }
 }
