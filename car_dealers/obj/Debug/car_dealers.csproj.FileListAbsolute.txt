@@ -1,0 +1,28 @@
+C:\Users\JF\repos\car_dealers\car_dealers\bin\Debug\car_dealers.exe.config
+C:\Users\JF\repos\car_dealers\car_dealers\bin\Debug\car_dealers.exe
+C:\Users\JF\repos\car_dealers\car_dealers\bin\Debug\car_dealers.pdb
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.AssemblyReference.cache
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.SuggestedBindingRedirects.cache
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.Form1.resources
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.Properties.Resources.resources
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.GenerateResource.cache
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.CoreCompileInputs.cache
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.exe
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.pdb
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarAdding.resources
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarFinding.resources
+C:\Users\JF\repos\car_dealers\car_dealers\obj\Debug\car_dealers.CarRenting.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\bin\Debug\car_dealers.exe.config
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\bin\Debug\car_dealers.exe
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\bin\Debug\car_dealers.pdb
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.AssemblyReference.cache
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.SuggestedBindingRedirects.cache
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.CarAdding.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.CarFinding.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.CarRenting.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.Form1.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.Properties.Resources.resources
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.GenerateResource.cache
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.csproj.CoreCompileInputs.cache
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.exe
+C:\Users\jjasi\studia\semestr 4\PZ2\car_dealers\car_dealers\obj\Debug\car_dealers.pdb

@@ -46,6 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="CarAdding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarAdding.Designer.cs">
+      <DependentUpon>CarAdding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarFinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarFinding.Designer.cs">
+      <DependentUpon>CarFinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CarRenting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarRenting.Designer.cs">
+      <DependentUpon>CarRenting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +73,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CarAdding.resx">
+      <DependentUpon>CarAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarFinding.resx">
+      <DependentUpon>CarFinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarRenting.resx">
+      <DependentUpon>CarRenting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
