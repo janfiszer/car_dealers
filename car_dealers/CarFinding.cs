@@ -109,5 +109,10 @@ namespace car_dealers
             CarRenting carRenting = new CarRenting(this, selectedCar.ImagePath);
             carRenting.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

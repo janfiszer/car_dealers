@@ -61,6 +61,8 @@ namespace car_dealers
             form1.addToCarList(car);
             // TODO: don't do that every time after adding a car
             form1.carListToFile("all-cars.csv");
+
+            MessageBox.Show(brand + " " + model + " added!", "SUCCES");
         }
         private void button5_Click(object sender, EventArgs e)
         {

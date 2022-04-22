@@ -27,7 +27,9 @@ namespace car_dealers
             InitializeComponent();
             loadBookedListFromFile("booked-testing-rides.txt");
             InitCombobox();
+
             pictureBox1.Image = Image.FromFile(ImagePath);
+            button_rentIt.Enabled = false;
         }
         private void loadBookedListFromFile(string fileName)
         {
@@ -65,7 +67,6 @@ namespace car_dealers
                 if (rent.Item1.Equals(c))
                 {
                     comboBox1.Items.Remove(rent.Item2);
-                    label1.Text = rent.Item2;
                 }
             }
         }
@@ -75,6 +76,7 @@ namespace car_dealers
             bookedRentingList.Add((carFinding.SelectedCar, (string)comboBox1.SelectedItem));
             bookedListToFile("booked-testing-rides.txt");
             MessageBox.Show("Car rented for day " + comboBox1.SelectedItem);
+            this.Close();
         }
 
         private void bookedListToFile(string fileName)
@@ -85,6 +87,16 @@ namespace car_dealers
                 sb.Append(rent.Item2 + ";" + rent.Item1.ToString());
             }
             File.WriteAllText(fileName, sb.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            button_rentIt.Enabled = true;
         }
     }
 }
